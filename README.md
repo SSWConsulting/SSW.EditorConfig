@@ -17,12 +17,6 @@ Then most rules have been elevated into warnings, but lowered some to suggestion
 <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
 ```
 
-## Todo
-
-- [ ] Publish package to Nuget
-- [ ] Add versioning
-- [ ] Review Code Quality rules
-
 ## Resources
 
 - [code-analysis-overview](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/overview?tabs=net-7)
