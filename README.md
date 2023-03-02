@@ -11,10 +11,14 @@ Then most rules have been elevated into warnings, but lowered some to suggestion
 ## Setup
 
 1. Copy `.editorconfig` into the root of your repository
-2. Add the following to your `.csproj` to ensure that warnings are caught early:
+2. Configure your `Directory.Build.Props` at the root of your project:
 
 ```xml
-<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+<Project>
+ <PropertyGroup>
+   <TreatWarningsAsErrors Condition="'$(Configuration)' != 'Debug'">true</TreatWarningsAsErrors>
+ </PropertyGroup>
+</Project>
 ```
 
 ## Resources
