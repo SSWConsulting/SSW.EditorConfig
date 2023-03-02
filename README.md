@@ -11,15 +11,7 @@ Then most rules have been elevated into warnings, but lowered some to suggestion
 ## Setup
 
 1. Copy `.editorconfig` into the root of your repository
-2. Configure your `Directory.Build.Props` at the root of your project:
-
-```xml
-<Project>
- <PropertyGroup>
-   <TreatWarningsAsErrors Condition="'$(Configuration)' != 'Debug'">true</TreatWarningsAsErrors>
- </PropertyGroup>
-</Project>
-```
+2. Copy `Directory.Build.Props` into the root of your repository (this will treat warnings as errors in Release mode - typically your CICD pipeline) 
 
 ### Script
 
