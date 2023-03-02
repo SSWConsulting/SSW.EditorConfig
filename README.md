@@ -21,6 +21,14 @@ Then most rules have been elevated into warnings, but lowered some to suggestion
 </Project>
 ```
 
+### Script
+
+Alternatively, copy & paste this script in a Terminal, inside the root directory of your project:
+
+```powershell
+$editorConfigPath="./.editorconfig";if(-not (Test-Path $editorConfigPath)){Invoke-WebRequest "https://raw.githubusercontent.com/SSWConsulting/SSW.EditorConfig/main/.editorconfig" -OutFile $editorConfigPath;Write-Host "File installed: '$editorConfigPath'"}else{Write-Host "File already exists: '$editorConfigPath'"};$directoryBuildPropsPath="./Directory.Build.Props";if(-not (Test-Path $directoryBuildPropsPath)){Invoke-WebRequest "https://raw.githubusercontent.com/SSWConsulting/SSW.EditorConfig/main/Directory.Build.Props" -OutFile $directoryBuildPropsPath;Write-Host "File installed: '$directoryBuildPropsPath'"}else{Write-Host "File already exists: '$directoryBuildPropsPath'"}
+```
+
 ## Resources
 
 - [code-analysis-overview](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/overview?tabs=net-7)
