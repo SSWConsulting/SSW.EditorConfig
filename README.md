@@ -18,7 +18,7 @@ Then most rules have been elevated into warnings, but lowered some to suggestion
 Alternatively, copy & paste this script in a Terminal, inside the root directory of your project:
 
 ```powershell
-. { iwr -useb "https://raw.githubusercontent.com/SSWConsulting/SSW.EditorConfig/main/install.ps1" } | iex; install
+. { iwr -useb "https://raw.githubusercontent.com/SSWConsulting/SSW.EditorConfig/main/install.ps1" } | iex
 ```
 
 ## Resources
