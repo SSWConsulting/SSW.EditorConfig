@@ -13,6 +13,14 @@ Then most rules have been elevated into warnings, but lowered some to suggestion
 1. Copy `.editorconfig` into the root of your repository
 2. Copy `Directory.Build.Props` into the root of your repository (this will treat warnings as errors in Release mode - typically your CICD pipeline) 
 
+### Script
+
+Alternatively, copy & paste this script in a Terminal, inside the root directory of your project:
+
+```powershell
+. { iwr -useb "https://raw.githubusercontent.com/SSWConsulting/SSW.EditorConfig/main/install.ps1" } | iex
+```
+
 ## Resources
 
 - [code-analysis-overview](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/overview?tabs=net-7)
